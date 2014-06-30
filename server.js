@@ -1,6 +1,6 @@
 var http   = require('http'),
     server = null,
-    port   = 3000,
+    port   = process.env.PORT || 3000,
     ip     = '127.0.0.1';
 
 var server = http.createServer(function(request, response) {
